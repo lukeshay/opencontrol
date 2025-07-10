@@ -1,5 +1,11 @@
 # opencontrol
 
+## 0.1.3
+
+### Patch Changes
+
+- 10a9306: Upgrade deps
+
 ## 0.1.2
 
 ### Patch Changes

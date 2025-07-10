@@ -1,5 +1,12 @@
 # opencontrol-frontend
 
+## 0.0.8
+
+### Patch Changes
+
+- Updated dependencies [10a9306]
+  - @lshay/opencontrol@0.1.3
+
 ## 0.0.7
 
 ### Patch Changes
