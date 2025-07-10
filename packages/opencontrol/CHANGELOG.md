@@ -1,5 +1,11 @@
 # opencontrol
 
+## 0.1.2
+
+### Patch Changes
+
+- b0e9501: Change deps
+
 ## 0.1.1
 
 ### Patch Changes

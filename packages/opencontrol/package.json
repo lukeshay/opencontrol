@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@lshay/opencontrol",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "bin": {
     "opencontrol": "./bin/index.mjs"
@@ -30,7 +30,7 @@
     "zod-to-json-schema": "^3.24.4"
   },
   "devDependencies": {
-    "@standard-schema/spec": "1.0.0",
-    "@lshay/opencontrol-frontend": "workspace:*"
+    "@lshay/opencontrol-frontend": "workspace:*",
+    "@standard-schema/spec": "1.0.0"
   }
 }

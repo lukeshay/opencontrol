@@ -7,6 +7,6 @@
     "@ai-sdk/openai": "1.2.5",
     "@lshay/opencontrol": "workspace:*",
     "aws-sdk": "2.1692.0",
-    "zod": "3.24.2"
+    "zod": "^3.24.2"
   }
 }
