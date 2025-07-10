@@ -1,5 +1,5 @@
 {
-  "name": "opencontrol-frontend",
+  "name": "@lshay/opencontrol-frontend",
   "private": true,
   "version": "0.0.6",
   "description": "",
@@ -18,9 +18,9 @@
     "vite-plugin-solid": "2.11.6"
   },
   "dependencies": {
+    "@lshay/opencontrol": "workspace:*",
     "ai": "4.2.11",
     "hono": "4.7.5",
-    "opencontrol": "workspace:*",
     "solid-js": "1.9.5"
   }
 }

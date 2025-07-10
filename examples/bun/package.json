@@ -5,8 +5,8 @@
   "dependencies": {
     "@ai-sdk/google": "1.2.3",
     "@ai-sdk/openai": "1.2.5",
+    "@lshay/opencontrol": "workspace:*",
     "aws-sdk": "2.1692.0",
-    "opencontrol": "workspace:*",
     "zod": "3.24.2"
   }
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "opencontrol",
+  "name": "@lshay/opencontrol",
   "license": "MIT",
   "version": "0.1.1",
   "type": "module",
@@ -25,12 +25,16 @@
     "@modelcontextprotocol/sdk": "1.9.0",
     "@tsconfig/bun": "1.0.7",
     "ai": "4.2.11",
-    "hono": "4.7.5",
-    "zod": "3.24.2",
     "zod-to-json-schema": "3.24.4"
   },
   "devDependencies": {
+    "@lshay/opencontrol-frontend": "workspace:*",
     "@standard-schema/spec": "1.0.0",
-    "opencontrol-frontend": "workspace:*"
+    "hono": "4.7.5",
+    "zod": "3.24.2"
+  },
+  "peerDependencies": {
+    "hono": "4.7.5",
+    "zod": "3.24.2"
   }
 }
