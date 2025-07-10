@@ -21,13 +21,13 @@
     }
   },
   "dependencies": {
-    "@hono/zod-validator": "^0.4.3",
-    "@modelcontextprotocol/sdk": "^1.9.0",
-    "@tsconfig/bun": "^1.0.7",
-    "ai": "^4.2.11",
-    "hono": "^4.7.5",
+    "@hono/zod-validator": "^0.7.0",
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "@tsconfig/bun": "^1.0.8",
+    "ai": "^4.3.17",
+    "hono": "^4.8.4",
     "zod": "^3.24.2",
-    "zod-to-json-schema": "^3.24.4"
+    "zod-to-json-schema": "^3.24.6"
   },
   "devDependencies": {
     "@lshay/opencontrol-frontend": "workspace:*",
