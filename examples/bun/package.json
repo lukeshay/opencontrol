@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.9",
   "dependencies": {
-    "@ai-sdk/google": "1.2.3",
-    "@ai-sdk/openai": "1.2.5",
+    "@ai-sdk/google": "1.2.22",
+    "@ai-sdk/openai": "1.3.23",
     "@lshay/opencontrol": "workspace:*",
     "aws-sdk": "2.1692.0",
-    "zod": "^3.24.2"
+    "zod": "^4.0.5"
   }
 }
