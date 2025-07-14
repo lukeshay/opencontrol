@@ -17,12 +17,3 @@ export function tool<Args extends undefined | StandardSchemaV1>(
 ) {
   return input
 }
-
-tool({
-  name: "foo",
-  description: "bar",
-  args: z.object({
-    foo: z.string(),
-  }),
-  async run(args) {},
-})
