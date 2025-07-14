@@ -1,5 +1,11 @@
 # opencontrol
 
+## 0.1.4
+
+### Patch Changes
+
+- 852c722: Upgrade dependencies
+
 ## 0.1.3
 
 ### Patch Changes
