@@ -1,5 +1,11 @@
 # opencontrol
 
+## 0.2.0
+
+### Minor Changes
+
+- 3d768a6: Upgrade dependencies
+
 ## 0.1.4
 
 ### Patch Changes
