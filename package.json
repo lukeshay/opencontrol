@@ -2,10 +2,10 @@
   "name": "opencontrol",
   "private": true,
   "type": "module",
-  "packageManager": "bun",
+  "packageManager": "bun@1.2.18",
   "description": "Control infrastructure from code",
   "scripts": {
-    "build": "bun run --cwd packages/opencontrol build",
+    "build": "bun run --cwd packages/frontend build && bun run --cwd packages/opencontrol build",
     "dev": "bun run --cwd packages/opencontrol dev",
     "format": "./scripts/format",
     "release": "./scripts/release"
@@ -36,7 +36,7 @@
     "semi": false
   },
   "overrides": {
-    "zod": "3.24.2"
+    "zod": "4.0.5"
   },
   "trustedDependencies": [
     "@rocicorp/zero-sqlite3",
