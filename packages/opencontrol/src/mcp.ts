@@ -23,12 +23,12 @@ function getInputSchema(args: any) {
   if (!args) {
     return z.toJSONSchema(z.object({}))
   }
-  
+
   // Check if it's a zod schema (has _zod property)
-  if (args && typeof args === 'object' && '_zod' in args) {
+  if (args && typeof args === "object" && "_zod" in args) {
     return z.toJSONSchema(args)
   }
-  
+
   // Fallback for other StandardSchemaV1 types - return a generic object schema
   // This maintains compatibility while we transition
   return z.toJSONSchema(z.object({}))
