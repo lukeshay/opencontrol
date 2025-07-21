@@ -1,5 +1,16 @@
 # opencontrol-frontend
 
+## 0.1.0
+
+### Minor Changes
+
+- 3d768a6: Upgrade dependencies
+
+### Patch Changes
+
+- Updated dependencies [3d768a6]
+  - @lshay/opencontrol@0.2.0
+
 ## 0.0.9
 
 ### Patch Changes
