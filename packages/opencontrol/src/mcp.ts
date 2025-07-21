@@ -10,7 +10,6 @@ import {
 } from "@modelcontextprotocol/sdk/types.js"
 import { z } from "zod"
 import { Tool } from "./tool.js"
-import { zodToJsonSchema } from "zod-to-json-schema"
 
 const RequestSchema = z.union([
   InitializeRequestSchema,
@@ -18,6 +17,22 @@ const RequestSchema = z.union([
   CallToolRequestSchema,
 ])
 type RequestSchema = z.infer<typeof RequestSchema>
+
+function getInputSchema(args: any) {
+  // If no args, return empty object schema
+  if (!args) {
+    return z.toJSONSchema(z.object({}))
+  }
+  
+  // Check if it's a zod schema (has _zod property)
+  if (args && typeof args === 'object' && '_zod' in args) {
+    return z.toJSONSchema(args)
+  }
+  
+  // Fallback for other StandardSchemaV1 types - return a generic object schema
+  // This maintains compatibility while we transition
+  return z.toJSONSchema(z.object({}))
+}
 
 export function createMcp(input: { tools: Tool[] }) {
   return {
@@ -41,10 +56,7 @@ export function createMcp(input: { tools: Tool[] }) {
           return {
             tools: input.tools.map((tool) => ({
               name: tool.name,
-              inputSchema: zodToJsonSchema(
-                tool.args || (z.object({}) as any),
-                "args",
-              ).definitions!["args"] as any,
+              inputSchema: getInputSchema(tool.args) as any,
               description: tool.description,
             })),
           } satisfies ListToolsResult
